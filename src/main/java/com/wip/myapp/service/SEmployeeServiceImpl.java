@@ -1,16 +1,10 @@
 package com.wip.myapp.service;
 
 import java.util.List;
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
-
 import com.wip.myapp.entity.SEmployee;
 import com.wip.myapp.repository.SEmployeeRepository;
-
 import jakarta.transaction.Transactional;
 
 @Service
@@ -44,14 +38,6 @@ public class SEmployeeServiceImpl implements SEmployeeService {
 	public List<SEmployee> deleteEmployee(Long eid) {
 		sEmployeeRepository.deleteById(eid);
 		return getAllEmployee();
-	}
-
-	@Override
-	public Optional<SEmployee> getEmployeeById(Long eid) {
-
-		return sEmployeeRepository.findById(eid);
-	}
-
-	
+	}	
 
 }

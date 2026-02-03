@@ -1,6 +1,0 @@
-com\wip\myapp\controller\TestController.class
-com\wip\myapp\service\SEmployeeService.class
-com\wip\myapp\service\SEmployeeServiceImpl.class
-com\wip\myapp\MyappApplication.class
-com\wip\myapp\entity\SEmployee.class
-com\wip\myapp\repository\SEmployeeRepository.class
